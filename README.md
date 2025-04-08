@@ -28,7 +28,7 @@ This is a structured plan for how the To-do List App will evolve over time. The 
 - [x] Delete tasks
 - [x] Mark tasks as completed
 - [x] Save tasks using LocalStorage
-- [] Basic responsive layout
+- [ ] Basic responsive layout
 
 ---
 
