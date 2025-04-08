@@ -103,3 +103,35 @@ function darkmode() {
     var element = document.body;
     element.classList.toggle("dark-mode");
   }
+
+function showstats() {
+  // Verstecke den To-Do-List-Container
+  const todoList = document.querySelector('.todolist');
+  todoList.style.display = 'none';
+
+  // Zeige den Statistik-Container
+  let statsContainer = document.getElementById('stats-container');
+  if (!statsContainer) {
+    statsContainer = document.createElement('div');
+    statsContainer.id = 'stats-container';
+    statsContainer.innerHTML = `
+      <h1>Statistics</h1>
+      <p>Here you can display your statistics...</p>
+      <button onclick="backToTodoList()">Back to To-Do List</button>
+    `;
+    document.body.appendChild(statsContainer);
+  }
+  statsContainer.style.display = 'block';
+}
+
+function backToTodoList() {
+  // Zeige den To-Do-List-Container
+  const todoList = document.querySelector('.todolist');
+  todoList.style.display = 'block';
+
+  // Verstecke den Statistik-Container
+  const statsContainer = document.getElementById('stats-container');
+  if (statsContainer) {
+    statsContainer.style.display = 'none';
+  }
+}

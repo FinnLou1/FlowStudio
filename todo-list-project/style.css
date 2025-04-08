@@ -34,7 +34,7 @@
   }
 
   #input-box {
-    width: 500px;
+    width:575px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -42,7 +42,7 @@
     font-size: 20px;
   }
 
-  #input-button {
+  .input-button {
     font-size: 20px;
     cursor: pointer;
     padding: 10px;
@@ -159,4 +159,5 @@
     padding: 15px 15px;
     margin-top: 30px;
   }
+
   
