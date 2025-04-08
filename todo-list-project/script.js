@@ -78,7 +78,7 @@ function renderTask(task) {
     if (update !== null && update.trim() !== "") {
       taskSpan.textContent = update.trim();
       task.text = update.trim();
-      task.completed = false;
+      ask.completed = false;
       checkbox.checked = false;
       li.classList.remove("completed");
       saveTasks();
@@ -109,19 +109,27 @@ function showstats() {
   const todoList = document.querySelector('.todolist');
   todoList.style.display = 'none';
 
-  // Zeige den Statistik-Container
-  let statsContainer = document.getElementById('stats-container');
-  if (!statsContainer) {
-    statsContainer = document.createElement('div');
-    statsContainer.id = 'stats-container';
-    statsContainer.innerHTML = `
-      <h1>Statistics</h1>
-      <p>Here you can display your statistics...</p>
-      <button onclick="backToTodoList()">Back to To-Do List</button>
-    `;
-    document.body.appendChild(statsContainer);
-  }
-  statsContainer.style.display = 'block';
+  // Lade den Statistik-Container aus der externen Datei
+  fetch('stats.html')
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Failed to load stats.html');
+      }
+      return response.text();
+    })
+    .then(html => {
+      let statsContainer = document.getElementById('stats-container');
+      if (!statsContainer) {
+        statsContainer = document.createElement('div');
+        statsContainer.id = 'stats-container';
+        document.body.appendChild(statsContainer);
+      }
+      statsContainer.innerHTML = html;
+      statsContainer.style.display = 'block';
+    })
+    .catch(error => {
+      console.error('Error loading stats.html:', error);
+    });
 }
 
 function backToTodoList() {
