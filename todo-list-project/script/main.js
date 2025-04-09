@@ -1,6 +1,6 @@
 import { tasks, saveTasks, loadTasks, addTask } from './tasks.js';
 import { updateCounters } from './counters.js';
-import { showstats } from './navigation.js'; // Importiere die Funktion
+import { showstats } from './navigation.js';
 
 const inputBox = document.getElementById("input-box");
 const listContainer = document.getElementById("list-container");

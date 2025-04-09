@@ -1,6 +1,5 @@
-
 export function backToTodoList() {
-  const todoList = document.querySelector('.todolist');
+  const todoList = document.getElementById('todo-container'); 
   todoList.style.display = 'block';
 
   const statsContainer = document.getElementById('stats-container');
@@ -10,13 +9,12 @@ export function backToTodoList() {
 }
 
 export function showstats() {
-  const todoList = document.querySelector('.todolist');
+  const todoList = document.getElementById('todo-container'); 
   if (!todoList) {
     console.error('Todo list container not found!');
     return;
   }
   todoList.style.display = 'none';
-
   fetch('/todo-list-project/stats.html')
     .then(response => {
       console.log('Fetch response:', response);
@@ -43,6 +41,6 @@ export function showstats() {
     })
     .catch(error => {
       console.error('Error loading stats.html:', error);
-      alert('Could not load statistics. Please check the console for more details.');
+      alert('Statistiken konnten nicht geladen werden. Bitte überprüfen Sie die Konsole für Details.');
     });
 }

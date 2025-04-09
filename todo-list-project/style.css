@@ -67,6 +67,7 @@ body {
 }
 
 #tasklistSeperator {
+  margin: 10px 0 40px 0;
   border: 2px solid #2A3132;
 }
 
