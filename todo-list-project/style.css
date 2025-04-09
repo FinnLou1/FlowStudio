@@ -30,6 +30,8 @@ body {
 }
 
 #sidename {
+  font-size: 50px;
+  font-weight: bold;
   padding: 40px 0px 0px 40px;
 }
 
@@ -38,13 +40,12 @@ body {
 }
 
 #profilehr {
-  margin-top: 320px;
+  margin-top: 370px;
 }
 
 #sidesettings {
   padding-top: 40px; 
 }
-
 
 .sidenav a:hover {
   color: #f1f1f1;
@@ -56,8 +57,19 @@ body {
 }
 
 #header h1 { 
-  text-align: center;
+  color: #2A3132; 
+  font-size: 50px;
 }
+
+#tasklisth2 {
+  color: #2A3132;
+  font-size: 30px;
+}
+
+#tasklistSeperator {
+  border: 2px solid #2A3132;
+}
+
 .container {
   background-color: #ffffff;
   padding: 20px;
@@ -66,11 +78,13 @@ body {
   width: 100%;
   max-width: 400px;
 }
+
 .completed {
   text-decoration: line-through;
   color: gray;
   border: 1px solid gray;
 }
+
 #input-box {
   width:575px;
   padding: 10px;
@@ -79,6 +93,7 @@ body {
   margin-right: 5px;
   font-size: 20px;
 }
+
 .input-button {
   font-size: 20px;
   cursor: pointer;
@@ -87,6 +102,7 @@ body {
   border-radius: 5px;
   background-color: #2e60ea;
 }
+
 .input-container {
   display: flex;
 }
@@ -118,25 +134,26 @@ li {
   align-items: flex-start; 
   justify-content: space-between;
   gap: 20px;
-  padding: 15px;
+  padding: 20px;
   background-color: #f8f9fa;
-  border-radius: 5px;
-  margin-bottom: 15px;
-  width: 800px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  width: 1000px;
   flex-wrap: wrap; 
 }
 
 label input[type="checkbox"] {
   margin-top: 5px; 
 }
+
 label span {
   word-wrap: break-word;
   overflow-wrap: break-word;
   white-space: normal;
   display: inline-block;
-  font-size: 16px;
-  line-height: 1.4;
+  font-size: 20px;
 }
+
 label {
   display: flex;
   align-items: flex-start;
@@ -144,6 +161,7 @@ label {
   flex: 1;
   max-width: 600px;
 }
+
 li label span {
   word-wrap: break-word;
   white-space: normal;
@@ -156,6 +174,7 @@ li.completed {
   text-decoration: line-through;
   color: #6c757d;
 }
+
 .edit-btn { 
   color: white;
   text-align: center;
@@ -164,6 +183,7 @@ li.completed {
   border: 1px solid #28a745;
   border-radius: 18px;
 }
+
 .delete-btn {
   color: white;
   text-align: center;
@@ -198,6 +218,7 @@ li.completed {
 
 #statsh1 {
   margin-bottom: 20px;
+  color: #2A3132;
 }
 
 #back-button {

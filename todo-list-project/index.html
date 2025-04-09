@@ -5,21 +5,18 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-
     <div class="sidenav">
-      <a id="sidename" href="#"> test </a>
+      <a id="sidename" href="#"> Timora </a>
       <br>
       <hr>
       <a href="#dashboard"> Dashboard </a>
       <a href="#todolist"> To Do List </a>
       <a href="#calendar"> Calendar </a>
-      <br> <br> <br> 
       <hr id = "profilehr">
       <a id="sideprofile" href="#"> Profile </a>
       <a id ="sidesettings" href="#setting"> Settings </a>
     </div>
-
-    <div class = "todolist">
+    <div>
     <!-- create a container for the todo list -->
     <div id="todo-container">
       <!-- todo list header -->
@@ -39,7 +36,8 @@
         <button class ="input-button" id="show-stats-button">Show Statistics</button>
       </div>
       <!-- task list -->
-      <h2>Task List</h2>
+      <h2 id = "tasklisth2">Task List</h2>
+      <hr id = "tasklistSeperator"> 
       <ul id="list-container"></ul>
       <hr />
         <!-- task list counter -->
@@ -54,5 +52,4 @@
   </div>
     <script type="module" src="script/main.js"></script>
   </body>
-
-  </html>
+</html>
