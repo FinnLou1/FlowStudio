@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: lightblue;
+  background-color: #ffffff;
   margin: 0;
   padding: 20px;
   display: flex;
@@ -8,6 +8,48 @@ body {
   min-height: 100vh;
   box-sizing: border-box;
 }
+
+.sidenav {
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #2e60ea;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 50px 1px 0px 40px;
+  text-decoration: none;
+  font-size: 30px;
+  color: #fff;
+  display: flex;
+}
+
+#sidename {
+  padding: 40px 0px 0px 40px;
+}
+
+#sideprofile {
+  padding: 20px -0px 0px 40px;
+}
+
+#profilehr {
+  margin-top: 320px;
+}
+
+#sidesettings {
+  padding-top: 40px; 
+}
+
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
 .dark-mode {
   background-color: white;
   color: black;
