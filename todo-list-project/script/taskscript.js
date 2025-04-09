@@ -21,8 +21,10 @@ function renderTask(task) {
   if (task.completed) li.classList.add("completed");
 
   li.innerHTML = `
+    <div class="checkbox">
+            <input type="checkbox" ${task.completed ? "checked" : ""}>
+    </div>
     <label>
-        <input type="checkbox" ${task.completed ? "checked" : ""}>
         <span>${task.text}</span>
     </label>
     <div class="btn-group">
