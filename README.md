@@ -34,11 +34,11 @@ This is a structured plan for how the To-do List App will evolve over time. The 
 
 ### ⚙️ Phase 2: Core Features
 
-- [ ] Edit existing tasks  
+- [x] Edit existing tasks  
 - [ ] Sort tasks by date, priority, or status  
 - [ ] Filter tasks (All / Completed / Active)  
 - [ ] Search bar for task lookup  
-- [ ] Dark/Light mode toggle  
+- [x] Dark/Light mode toggle  
 - [ ] Drag & drop to reorder tasks  
 - [ ] Smooth animations and visual feedback
 

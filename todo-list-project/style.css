@@ -1,163 +1,195 @@
-  body {
-    font-family: Arial, sans-serif;
-    background-color: lightblue;
-    margin: 0;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    min-height: 100vh;
-    box-sizing: border-box;
-  }
+body {
+  font-family: Arial, sans-serif;
+  background-color: lightblue;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+.dark-mode {
+  background-color: white;
+  color: black;
+}
 
-  .dark-mode {
-    background-color: white;
-    color: black;
-  }
-  
-  #header h1 { 
-    text-align: center;
-  }
+#header h1 { 
+  text-align: center;
+}
+.container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 400px;
+}
+.completed {
+  text-decoration: line-through;
+  color: gray;
+  border: 1px solid gray;
+}
+#input-box {
+  width:575px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 5px;
+  font-size: 20px;
+}
+.input-button {
+  font-size: 20px;
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #2e60ea;
+}
+.input-container {
+  display: flex;
+}
 
-  .container {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    width: 100%;
-    max-width: 400px;
-  }
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
 
-  .completed {
-    text-decoration: line-through;
-    color: gray;
-    border: 1px solid gray;
-  }
+button {
+  padding: 10px;
+  margin-left: 5px;
+  border: none;
+  background-color: #28a745;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
-  #input-box {
-    width:575px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-right: 5px;
-    font-size: 20px;
-  }
+ul {
+  list-style-type: none;
+  padding: 0;
+}
 
-  .input-button {
-    font-size: 20px;
-    cursor: pointer;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #2e60ea;
-  }
+li {
+  display: flex;
+  align-items: flex-start; 
+  justify-content: space-between;
+  gap: 20px;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  width: 800px;
+  flex-wrap: wrap; 
+}
 
-  .input-container {
-    display: flex;
-  }
-  
-  input[type="text"] {
-    flex: 1;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-  }
-  
-  button {
-    padding: 10px;
-    margin-left: 5px;
-    border: none;
-    background-color: #28a745;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  li {
-    display: flex;
-    align-items: flex-start; 
-    justify-content: space-between;
-    gap: 20px;
-    padding: 15px;
-    background-color: #f8f9fa;
-    border-radius: 5px;
-    margin-bottom: 15px;
-    width: 800px;
-    flex-wrap: wrap; 
-  }
-  
-  label input[type="checkbox"] {
-    margin-top: 5px; 
-  }
+label input[type="checkbox"] {
+  margin-top: 5px; 
+}
+label span {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 1.4;
+}
+label {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  flex: 1;
+  max-width: 600px;
+}
+li label span {
+  word-wrap: break-word;
+  white-space: normal;
+  overflow-wrap: break-word;
+  max-width: 500px; 
+  display: inline-block;
+}
 
-  label span {
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    white-space: normal;
-    display: inline-block;
-    font-size: 16px;
-    line-height: 1.4;
-  }
+li.completed {
+  text-decoration: line-through;
+  color: #6c757d;
+}
+.edit-btn { 
+  color: white;
+  text-align: center;
+  background-color: #28a745;
+  padding: 10px 30px;
+  border: 1px solid #28a745;
+  border-radius: 18px;
+}
+.delete-btn {
+  color: white;
+  text-align: center;
+  background-color: #ff5757;
+  padding: 10px 30px;
+  border: 1px solid #ff5757;
+  border-radius: 18px;
+}
 
-  label {
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
-    flex: 1;
-    max-width: 600px;
-  }
+.btn-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 
-  li label span {
-    word-wrap: break-word;
-    white-space: normal;
-    overflow-wrap: break-word;
-    max-width: 500px; 
-    display: inline-block;
-  }
-  
-  li.completed {
-    text-decoration: line-through;
-    color: #6c757d;
-  }
+.counter-container {
+  text-align: center;
+}
 
-  .edit-btn { 
-    color: white;
-    text-align: center;
-    background-color: #28a745;
-    padding: 10px 30px;
-    border: 1px solid #28a745;
-    border-radius: 18px;
-  }
+.darkmodebutton {
+  background-color: #2e60ea;
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 15px 15px;
+  margin-top: 30px;
+}
 
-  .delete-btn {
-    color: white;
-    text-align: center;
-    background-color: #ff5757;
-    padding: 10px 30px;
-    border: 1px solid #ff5757;
-    border-radius: 18px;
-  }
-  
-  .btn-group {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
+#stats-container {
+  padding: 20px;
+  text-align: center;
+}
 
-  .counter-container {
-    text-align: center;
-  }
+#statsh1 {
+  margin-bottom: 20px;
+}
 
-  .darkmodebutton {
-    background-color: #2e60ea;
-    font-size: 20px;
-    border-radius: 10px;
-    padding: 15px 15px;
-    margin-top: 30px;
-  }
+#back-button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
-  
+.stats {
+  background-color: white;
+  padding: 50px;
+  border-radius: 15px;
+  margin-top: 20px;
+  display: flex;          
+  justify-content: space-between; 
+  gap: 200px;             
+}
+
+.stat-box {
+  background-color: #007bff;
+  width: 300px;
+  height: 300px;
+  color: white;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 15px;
+  flex: 1;              
+}
+
+.stat-box h2 {
+  margin-top: 0;
+}
